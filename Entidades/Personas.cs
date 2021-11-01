@@ -20,5 +20,8 @@ namespace GestionPersonas.Entidades
 
         [ForeignKey("RolId")]
         public virtual Roles Rol { get; set; }
+
+        [ForeignKey("TipoAporteId")]
+        public virtual TiposAportes TiposAportes { get; set; }
     }
 }
